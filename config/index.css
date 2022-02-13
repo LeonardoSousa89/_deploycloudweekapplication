@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Teko:wght@300&display=swap");
+body {
+  background-image: url("../assets/wallpaper.jpg");
+  font-family: 'Allerta Stencil', sans-serif;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  color: #FBF37C;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  body .container {
+    border: solid 1px darkred;
+    border-radius: 12px;
+    text-align: center;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around; }
+    @media screen and (max-device-width: 640px) and (orientation: landscape) {
+      body .container {
+        height: 90%;
+        width: 60%; } }
+    @media screen and (max-device-width: 732px) and (max-device-height: 412px) and (orientation: landscape) {
+      body .container {
+        height: 90%;
+        width: 60%; } }
+    @media screen and (max-device-width: 640px) and (max-device-height: 360px) and (orientation: landscape) {
+      body .container {
+        height: 95%;
+        width: 60%;
+        font-size: x-small; } }
+    @media screen and (max-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) {
+      body .container {
+        height: 70%;
+        width: 60%; } }
+    @media screen and (max-device-width: 533px) and (max-device-height: 320px) and (orientation: landscape) {
+      body .container {
+        height: 90%;
+        width: 60%;
+        font-size: small; } }
+    @media screen and (max-device-width: 854px) and (max-device-height: 480px) and (orientation: landscape) {
+      body .container {
+        height: 80%;
+        width: 60%; } }
+    @media screen and (max-device-width: 320px) and (max-device-height: 480px) and (orientation: portrait) {
+      body .container {
+        height: 80%;
+        width: 60%; } }
+    @media screen and (max-device-width: 240px) and (max-device-height: 320px) and (orientation: portrait) {
+      body .container {
+        height: 90%;
+        width: 60%;
+        font-size: x-small; } }
+    @media screen and (max-device-width: 320px) and (max-device-height: 240px) and (orientation: landscape) {
+      body .container {
+        height: 90%;
+        width: 60%;
+        font-size: x-small; } }
+    @media screen and (max-device-width: 667px) and (max-device-height: 375px) and (orientation: landscape) {
+      body .container {
+        height: 90%;
+        width: 60%; } }
+    @media screen and (max-device-width: 844px) and (max-device-height: 390px) and (orientation: landscape) {
+      body .container {
+        height: 85%;
+        width: 60%; } }
+    @media screen and (max-device-width: 740px) and (max-device-height: 360px) and (orientation: landscape) {
+      body .container {
+        height: 90%;
+        width: 60%; } }
+    @media screen and (max-device-width: 915px) and (max-device-height: 412px) and (orientation: landscape) {
+      body .container {
+        height: 85%;
+        width: 60%; } }
+    @media screen and (max-device-width: 720px) and (max-device-height: 540px) and (orientation: landscape) {
+      body .container {
+        height: 70%;
+        width: 60%; } }
+    @media screen and (max-device-width: 653px) and (max-device-height: 280px) and (orientation: landscape) {
+      body .container {
+        height: 95%;
+        width: 60%;
+        font-size: x-small; }
+        body .container #email {
+          margin-top: 2em; } }
+    @media screen and (max-device-width: 640px) and (max-device-height: 384px) and (orientation: landscape) {
+      body .container {
+        height: 90%;
+        width: 60%; } }
+    @media screen and (max-device-width: 732px) and (max-device-height: 412px) and (orientation: landscape) {
+      body .container {
+        height: 95%;
+        width: 60%; } }
+    @media screen and (max-device-width: 896px) and (max-device-height: 414px) and (orientation: landscape) {
+      body .container {
+        height: 90%;
+        width: 60%; } }
+    body .container #email, body .container #pass {
+      padding: 1vh;
+      border: none;
+      outline: none; }
+      body .container #email:hover, body .container #pass:hover {
+        outline: solid 3px darkred; }
+    body .container #login {
+      border: none;
+      outline: none; }
+      body .container #login:hover {
+        color: #fff; }
+    body .container #email {
+      margin-bottom: 0.6em; }
+    body .container #pass {
+      margin-bottom: 0.9em; }
+    body .container #login {
+      margin-bottom: 3em;
+      border-radius: 8px;
+      padding: 0.5em;
+      background: darkred;
+      color: #FBF37C; }
+    body .container a {
+      text-decoration: none;
+      color: red; }
+    body .container p a:hover {
+      color: #fff; }
