@@ -5,10 +5,10 @@ function storage(pass){
 
 function dataSend() {
     /*production url*/
-    // const url = 'https://cloudweek.herokuapp.com/login'
+    const url = 'https://deploycloudweekapi.herokuapp.com/login'
 
     /*development url*/
-    const url = 'http://192.168.100.20:8081/login' || 'http://localhost:8081/login'
+    // const url = 'http://192.168.100.20:8081/login' || 'http://localhost:8081/login'
     
     /*production url*/
     const urlAppProd = 'https://cloudweek.netlify.app/index.html'
@@ -33,7 +33,7 @@ function dataSend() {
                 .then(response => {
                     if(response.ok){
                            storage(data.pass)
-                           document.location.href = urlAppDev
+                           document.location.href = urlAppProd
                     }else{
                         alert(response.status + ':' + response.statusText)
                     }
