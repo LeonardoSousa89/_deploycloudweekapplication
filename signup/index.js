@@ -1,7 +1,7 @@
 let doc = document
 
 function createAccount(){
-    const url = 'https://cloudweek.herokuapp.com/signup'
+    const url = 'https://deploycloudweekapi.herokuapp.com/signup'
 
     let username = doc.getElementById('username').value
     let email = doc.getElementById('email').value
@@ -17,14 +17,16 @@ function createAccount(){
         }   
     }
 
-    //está enviando os dados, porém gera uma mensagem de erro em conjunto
     fetch(url,config)
             .then(response => {
-                response.json()
+               if(response.ok){
+                   alert('data send with success')
+               }else{
+                  alert(response.status + ':' + response.statusText)
+               }
             })
             .catch((error)=>{
-                // alert(error)
-                console.log(error)
+                alert(error)
             })
 
     clear()
