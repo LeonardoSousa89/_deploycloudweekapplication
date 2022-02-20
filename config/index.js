@@ -21,19 +21,14 @@ function dataSend() {
 
         const data = { email, pass }
 
-        // const Header = new Headers({
-        //     'Content-Type':'application/json'
-        // })
-
-        // console.log(Header)
-
         let config = {
             method:'POST',
             body: JSON.stringify(data),
             mode:'cors',
             headers:{
                 'Content-Type':'application/json'
-            }
+            },
+            credentials: 'https://cloudweek.netlify.app/-origin'
         }
     
         fetch(url,config)
