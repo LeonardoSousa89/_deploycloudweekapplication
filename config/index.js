@@ -24,7 +24,7 @@ function dataSend() {
         let config = {
             method:'POST',
             body: JSON.stringify(data),
-            mode:'cors',
+            mode:'no-cors',
             headers:{
                 'Content-Type':'application/json'
             }
