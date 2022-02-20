@@ -27,8 +27,8 @@ function dataSend() {
             mode:'cors',
             headers:{
                 'Content-Type':'application/json'
-            },
-            credentials: 'same-origin'
+            }
+            // ,credentials: 'same-origin'
         }
     
         fetch(url,config)
