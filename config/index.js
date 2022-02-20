@@ -25,6 +25,8 @@ function dataSend() {
             'Content-Type':'application/json'
         })
 
+        console.log(Header)
+
         let config = {
             method:'POST',
             body: JSON.stringify(data),
