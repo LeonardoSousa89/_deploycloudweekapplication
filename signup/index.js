@@ -12,7 +12,7 @@ function createAccount(){
     let config = {
         method:'POST',
         body: JSON.stringify(data),
-        mode:'no-cors',
+        mode:'cors',
         headers:{
             'Content-Type':'application/json'
         }
