@@ -28,7 +28,7 @@ function dataSend() {
             headers:{
                 'Content-Type':'application/json'
             },
-            credentials: 'https://cloudweek.netlify.app/-origin'
+            credentials: 'same-origin'
         }
     
         fetch(url,config)
