@@ -21,18 +21,18 @@ function dataSend() {
 
         const data = { email, pass }
 
-        const Header = new Headers({
-            'Content-Type':'application/json'
-        })
+        // const Header = new Headers({
+        //     'Content-Type':'application/json'
+        // })
 
-        console.log(Header)
+        // console.log(Header)
 
         let config = {
             method:'POST',
             body: JSON.stringify(data),
             mode:'cors',
             headers:{
-                Header
+                'Content-Type':'application/json'
             }
         }
     
