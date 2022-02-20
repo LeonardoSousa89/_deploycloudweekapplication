@@ -31,7 +31,9 @@ function dataSend() {
             method:'POST',
             body: JSON.stringify(data),
             mode:'cors',
-            Header
+            headers:{
+                Header
+            }
         }
     
         fetch(url,config)
