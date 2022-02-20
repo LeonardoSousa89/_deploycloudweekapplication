@@ -26,9 +26,8 @@ function dataSend() {
             body: JSON.stringify(data),
             mode:'cors',
             headers:{
-                'Content-Type':'application/json'
+                'Content-Type':'application/jsonp'
             }
-            // ,credentials: 'same-origin'
         }
     
         fetch(url,config)

@@ -8,16 +8,14 @@ function createAccount(){
     let pass = doc.getElementById('pass').value
 
     let data = { username, email, pass }
-    
-    const Header = new Headers({
-        'Content-Type':'application/json'
-    })
 
     let config = {
         method:'POST',
         body: JSON.stringify(data),
         mode:'cors',
-        Header
+        headers:{
+            'Content-Type':'application/jsonp'
+        }
     }
 
     fetch(url,config)
