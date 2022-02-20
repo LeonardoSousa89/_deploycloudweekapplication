@@ -12,9 +12,10 @@ function createAccount(){
     let config = {
         method:'POST',
         body: JSON.stringify(data),
+        mode:'cors',
         headers :{
             'Content-Type':'application/json'
-        }   
+        }  
     }
 
     fetch(url,config)
