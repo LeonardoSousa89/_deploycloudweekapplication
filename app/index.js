@@ -9,9 +9,9 @@ function storage(){
         // document.location.href = '../index.html'
     }
 }
-storage()
+// storage()
 
-function removeItem(){
+function loggout(){
     localStorage.removeItem('_KEYPASS')
     /*production url*/
     document.location.href = 'https://cloudweek.netlify.app/app/index.html'
@@ -19,3 +19,5 @@ function removeItem(){
     /*development url*/
     // document.location.href = '../index.html'
 }
+
+
