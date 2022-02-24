@@ -39,20 +39,50 @@ function dataSend() {
             mode:'cors',
             HEADERS
         }
-    
-        fetch(url,config)
-                .then(response => {
-                    if(response.ok){
-                           storage(data.pass)
-                           document.location.href = urlAppProd
-                    }else{
-                        alert(response.status + ':' + response.statusText)
-                    }
-                })
-                .catch((error)=>{
-                    alert(error)
-                })
-    
+        
+        exports.handler = async function (event, context) {
+            try {
+              if (event.httpMethod === 'OPTIONS') {
+                return { statusCode: '204', HEADERS }
+              }
+              if (event.httpMethod === 'POST') {
+                  const body = JSON.parse(event.body)
+
+                  fetch(url,config)
+                  .then(response => {
+                      if(response.ok){
+                             storage(data.pass)
+                             document.location.href = urlAppProd
+                      }else{
+                          alert(response.status + ':' + response.statusText)
+                      }
+                  })
+                  .catch((error)=>{
+                      alert(error)
+                  })
+      
+
+                 return {
+                   statusCode: 200,
+                   body: 'Success',
+                   HEADERS
+                 } 
+           
+              }
+              return {
+                statusCode: 401,
+                HEADERS
+              }
+            } catch (e) {
+              console.error(e)
+              return {
+                statusCode: 500,
+                body: e.toString()
+              }
+            }
+          }
+
+        
 }
 
 
