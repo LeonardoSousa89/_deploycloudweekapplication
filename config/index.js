@@ -24,7 +24,7 @@ function dataSend() {
         let HEADERS = {
             'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Origin',
             'Content-Type': 'application/json', //optional
-            'Access-Control-Allow-Methods': 'POST, OPTIONS',
+            'Access-Control-Allow-Methods': 'POST, OPTIONS, GET, PUT, DELETE',
             'Access-Control-Max-Age': '8640'
           }
           
@@ -32,7 +32,7 @@ function dataSend() {
           
           HEADERS['Access-Control-Allow-Origin'] = '*'
           HEADERS['Vary'] = 'Origin'
-          
+
         let config = {
             method:'POST',
             body: JSON.stringify(data),
