@@ -28,7 +28,8 @@ function dataSend() {
             headers:{
                 'Access-Control-Allow-Origin':'https://cloudweek.netlify.app/',
                 'Content-Type':'application/json'
-            }
+            },
+            credentials: 'include'
         }
     
         fetch(url,config)
