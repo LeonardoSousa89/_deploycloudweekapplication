@@ -15,7 +15,7 @@ function createAccount(){
         mode:'cors',
         headers:{
             'Content-Type':'application/json',
-            'Access-Control-Allow-Origin':'*',
+            'Access-Control-Allow-Origin':'https://cloudweek.netlify.app/',
             'Access-Control-Allow-Headers':'*'
         }
     }
