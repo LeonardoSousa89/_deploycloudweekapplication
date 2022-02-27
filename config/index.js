@@ -27,7 +27,7 @@ function dataSend() {
             mode:'cors',
             headers:{
                 'Content-Type':'application/json',
-                'Access-Control-Allow-Origin':'https://cloudweek.netlify.app'
+                'Access-Control-Allow-Origin':'https://cloudweek.netlify.app/'
             }
         }
     
