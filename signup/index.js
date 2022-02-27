@@ -17,7 +17,7 @@ function createAccount(){
             'Access-Control-Allow-Origin':'https://cloudweek.netlify.app/',
             'Content-Type':'application/json'
         },
-        credentials: 'include'
+        credentials: 'same-origin'
     }
 
     fetch(url,config)
